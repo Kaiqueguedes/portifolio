@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contato — Kaique Guedes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <script src="main.js" defer></script>
+  <header class="site-header">
+    <a class="logo" href="index.html">Kaique Guedes</a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="skills.html">Habilidades</a>
+      <a href="projects.html">Projetos</a>
+      <a href="contact.html" class="active">Contato</a>
+      <button id="theme-toggle" aria-label="Alternar tema">🌗</button>
+    </nav>
+    <button class="mobile-menu" id="mobile-menu">☰</button>
+  </header>
+
+  <main class="container">
+    <h1 class="reveal">Contato</h1>
+    <form id="contact-form" class="contact-form" novalidate>
+      <label>Nome
+        <input type="text" id="name" name="name" required />
+      </label>
+
+      <label>Telefone
+        <input type="tel" id="phone" name="phone" required placeholder="(00) 00000-0000" />
+      </label>
+
+      <label>Email
+        <input type="email" id="email" name="email" required placeholder="SeuContato@seuEmail.com" />
+      </label>
+
+      <label>Mensagem
+        <textarea id="message" name="message" rows="5" required placeholder="Escreva sua mensagem aqui..."></textarea>
+      </label>
+
+      <div class="form-actions">
+        <button class="btn" type="submit">Enviar</button>
+      </div>
+      <div id="form-status" aria-live="polite"></div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>Kaique Guedes — <a href="contact.html">Contato</a> · <a href="https://github.com/Kaiqueguedes"
+          target="_blank">GitHub</a></div>
+
+    </div>
+  </footer>
+</body>
+
+</html>
