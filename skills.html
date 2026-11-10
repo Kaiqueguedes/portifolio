@@ -1,57 +1,39 @@
 <!doctype html>
-<html lang="pt-BR">
-
+<html lang='pt-BR'>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset='utf-8' />
+  <meta name='viewport' content='width=device-width,initial-scale=1' />
   <title>Habilidades — Kaique Guedes</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel='stylesheet' href='style.css' />
 </head>
-
 <body>
-  <script src="main.js" defer></script>
-  <header class="site-header">
-    <a class="logo" href="index.html">Kaique Guedes</a>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="skills.html">Habilidades</a>
-      <a href="projects.html">Projetos</a>
-      <a href="contact.html">Contato</a>
-      <button id="theme-toggle" aria-label="Alternar tema">🌗</button>
+  <canvas id='net'></canvas><div id='progress'></div><div class='glow' id='glow'></div>
+  <script src='main.js' defer></script>
+  <header class='site-header'>
+    <a class='logo' href='index.html'>&lt;<b>kaique</b>/&gt;</a>
+    <nav class='nav'>
+      <a href='index.html'>Home</a>
+      <a href='skills.html' class='active'>Habilidades</a>
+      <a href='projects.html'>Projetos</a>
+      <a href='contact.html'>Contato</a>
+      <button id='theme-toggle' aria-label='Alternar tema'>🌗</button>
     </nav>
-    <button class="mobile-menu" id="mobile-menu">☰</button>
+    <button class='mobile-menu' id='mobile-menu' aria-label='Menu'>☰</button>
   </header>
 
-  <main class="container">
-    <h1 class="reveal">Habilidades</h1>
-
-    <section class="skills-grid">
-      <div class="skill-card reveal">
-        <h4>Languages</h4>
-        <p>HTML · CSS · JavaScript · C#</p>
-      </div>
-      <div class="skill-card reveal">
-        <h4>Ferramentas</h4>
-        <p>Figma · Git · GitHub · VSCode</p>
-      </div>
-      <div class="skill-card reveal">
-        <h4>Conceitos</h4>
-        <p>Responsive Design · Acessibilidade · Lógica de programação</p>
-      </div>
-      <div class="skill-card reveal">
-        <h4>Soft Skills</h4>
-        <p>Comunicação · Aprendizado rápido · Trabalho em equipe</p>
-      </div>
+  <main class='container'>
+    <div class='eyebrow reveal'>// stack</div>
+    <h1 class='page-title reveal'>Habilidades</h1>
+    <p class='lead reveal'>Tecnologias e conceitos que uso nos meus projetos.</p>
+    <section class='grid g2'>
+      <div class='skill-card reveal'><h4>Linguagens</h4><div class='tags'><span class='tag'>HTML</span><span class='tag'>CSS</span><span class='tag'>JavaScript</span><span class='tag'>C#</span><span class='tag'>Python</span></div></div>
+      <div class='skill-card reveal d1'><h4>Dados</h4><div class='tags'><span class='tag'>Pandas</span><span class='tag'>NumPy</span><span class='tag'>Plotly</span><span class='tag'>Streamlit</span><span class='tag'>API REST (IBGE)</span><span class='tag'>Estatística descritiva</span></div></div>
+      <div class='skill-card reveal'><h4>Ferramentas</h4><div class='tags'><span class='tag'>Figma</span><span class='tag'>Git</span><span class='tag'>GitHub</span><span class='tag'>VSCode</span></div></div>
+      <div class='skill-card reveal d1'><h4>Conceitos</h4><div class='tags'><span class='tag'>Responsive Design</span><span class='tag'>Acessibilidade</span><span class='tag'>Lógica de programação</span></div></div>
+      <div class='skill-card reveal'><h4>Soft skills</h4><div class='tags'><span class='tag'>Comunicação</span><span class='tag'>Aprendizado rápido</span><span class='tag'>Trabalho em equipe</span></div></div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div>Kaique Guedes — <a href="contact.html">Contato</a> · <a href="https://github.com/Kaiqueguedes"
-          target="_blank">GitHub</a></div>
-
-    </div>
-  </footer>
+  <footer class='site-footer'><div class='container'>Kaique Guedes · <a href='contact.html'>Contato</a> · <a href='https://github.com/Kaiqueguedes' target='_blank' rel='noopener'>GitHub</a></div></footer>
 </body>
-
 </html>

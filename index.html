@@ -1,62 +1,97 @@
 <!doctype html>
-<html lang="pt-BR">
-
+<html lang='pt-BR'>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset='utf-8' />
+  <meta name='viewport' content='width=device-width,initial-scale=1' />
+  <meta name='description' content='Portfolio de Kaique Guedes: desenvolvimento front-end e analise de dados com Python.' />
   <title>Kaique Guedes — Portfólio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel='stylesheet' href='style.css' />
 </head>
-
 <body>
-  <script src="main.js" defer></script>
-  <header class="site-header">
-    <a class="logo" href="index.html">Kaique Guedes</a>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="skills.html">Habilidades</a>
-      <a href="projects.html">Projetos</a>
-      <a href="contact.html">Contato</a>
-      <button id="theme-toggle" aria-label="Alternar tema">🌗</button>
+  <canvas id='net'></canvas><div id='progress'></div><div class='glow' id='glow'></div>
+  <script src='main.js' defer></script>
+  <header class='site-header'>
+    <a class='logo' href='index.html'>&lt;<b>kaique</b>/&gt;</a>
+    <nav class='nav'>
+      <a href='index.html' class='active'>Home</a>
+      <a href='skills.html'>Habilidades</a>
+      <a href='projects.html'>Projetos</a>
+      <a href='contact.html'>Contato</a>
+      <button id='theme-toggle' aria-label='Alternar tema'>🌗</button>
     </nav>
-    <button class="mobile-menu" id="mobile-menu">☰</button>
+    <button class='mobile-menu' id='mobile-menu' aria-label='Menu'>☰</button>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-inner reveal">
-        <h1>Olá — eu sou <span class="name">Kaique Guedes</span></h1>
-        <h2 class="typing" data-text="Cursando técnico no Cotemig · Aprendendo C#, HTML, CSS e JavaScript"></h2>
-        <p>Transformando estudos em projetos práticos. Aqui ficam alguns trabalhos e habilidades que venho
-          desenvolvendo.</p>
-        <div class="hero-cta">
-          <a class="btn" href="projects.html">Ver projetos</a>
-          <a class="btn outline" href="https://github.com/Kaiqueguedes" target="_blank" rel="noopener">Meu GitHub</a>
+    <section class='hero'>
+      <div class='reveal'>
+        <span class='badge'><i class='dot'></i> Aberto a oportunidades</span>
+        <h1>Olá, eu sou <span class='grad'>Kaique Guedes</span></h1>
+        <h2 class='typing' data-text='Técnico no Cotemig · Front-end & Dados com Python'></h2>
+        <p>Transformo estudos em projetos práticos: sites responsivos, lógica de programação e painéis de dados com informações públicas do IBGE.</p>
+        <div class='hero-cta'>
+          <a class='btn' href='projects.html'>Ver projetos</a>
+          <a class='btn outline' href='https://github.com/Kaiqueguedes' target='_blank' rel='noopener'>Meu GitHub</a>
+          <a class='btn outline' href='contact.html'>Fale comigo</a>
         </div>
+      </div>
+      <div class='terminal reveal d2'>
+        <div class='term-bar'><i></i><i></i><i></i><span>kaique.profile.js</span></div>
+<pre><code><span class='k'>const</span> <span class='p'>kaique</span> = {
+  formacao: <span class='s'>'Técnico no Cotemig'</span>,
+  foco: [<span class='s'>'Front-end'</span>, <span class='s'>'Dados'</span>],
+  stack: [<span class='s'>'HTML'</span>, <span class='s'>'CSS'</span>, <span class='s'>'JS'</span>,
+          <span class='s'>'C#'</span>, <span class='s'>'Python'</span>],
+  aprendendo: <span class='s'>'todos os dias'</span>
+};</code></pre>
       </div>
     </section>
 
-    <section class="about container reveal">
-      <h3>Sobre mim</h3>
-      <p>Atualmente cursando ensino técnico no Cotemig. Aprendendo C#, HTML, CSS e JavaScript. Tenho interesse em
-        desenvolvimento front-end e soluções para web.</p>
+    <div class='marquee reveal'><div class='track'>
+      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>C#</span><span>Python</span><span>Pandas</span><span>Streamlit</span><span>Plotly</span><span>Git</span><span>GitHub</span><span>Figma</span>
+      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>C#</span><span>Python</span><span>Pandas</span><span>Streamlit</span><span>Plotly</span><span>Git</span><span>GitHub</span><span>Figma</span>
+    </div></div>
+
+    <section class='container'>
+      <div class='eyebrow reveal'>// sobre mim</div>
+      <h3 class='section-title reveal'>Quem sou eu</h3>
+      <p class='lead reveal'>Estudo ensino técnico no Cotemig e tenho interesse em desenvolvimento front-end e soluções para web. Recentemente entrei no mundo dos dados, analisando indicadores do mercado de trabalho brasileiro com Python.</p>
+      <div class='grid g3'>
+        <div class='card reveal'><h4>Formação</h4><p>Ensino técnico no Cotemig.</p></div>
+        <div class='card reveal d1'><h4>Foco</h4><p>Front-end, responsividade e análise de dados.</p></div>
+        <div class='card reveal d2'><h4>Ferramentas</h4><p>Git, GitHub, VSCode, Figma, Streamlit e Plotly.</p></div>
+      </div>
     </section>
 
-    <section class="contact-quick container reveal">
-      <h3>Contato rápido</h3>
-      <p>Email: <a href="mailto:kaiqueguedesv@gmail.com">kaiqueguedesv@gmail.com</a> · Telefone: <a
-          href="tel:+5531988497624">31988497624</a></p>
-      <p>Instagram: <a href="https://instagram.com/kaique_.guedes" target="_blank">@kaique_.guedes</a></p>
+    <section class='container'>
+      <div class='eyebrow reveal'>// destaques</div>
+      <h3 class='section-title reveal'>Projetos em destaque</h3>
+      <p class='lead reveal'>Dados públicos do IBGE viram painéis interativos com estatística descritiva, outliers e boxplots.</p>
+      <div class='grid g2'>
+        <a class='project-card reveal' href='https://github.com/Kaiqueguedes/analise-de-dados-python' target='_blank' rel='noopener'>
+          <h2>Números que Falam</h2>
+          <p>Dashboard do mercado de trabalho brasileiro com dados da PNAD Contínua (IBGE): desocupação, informalidade, ranking por UF e leitura por persona.</p>
+          <div class='tags'><span class='tag'>Python</span><span class='tag'>Streamlit</span><span class='tag'>Pandas</span><span class='tag'>Plotly</span></div>
+          <span class='go'>Ver no GitHub →</span>
+        </a>
+        <a class='project-card reveal d1' href='https://github.com/Kaiqueguedes/numeros-que-falam-boxplots' target='_blank' rel='noopener'>
+          <h2>Boxplots IBGE</h2>
+          <p>Boxplot da taxa por UF e o painel de escolaridade do Sudeste, desenvolvido em conjunto com Isaac Ramos.</p>
+          <div class='tags'><span class='tag'>Python</span><span class='tag'>Plotly</span><span class='tag'>API IBGE</span></div>
+          <span class='go'>Ver no GitHub →</span>
+        </a>
+      </div>
+    </section>
+
+    <section class='container'>
+      <div class='cta reveal'>
+        <h3>Vamos construir algo juntos?</h3>
+        <p>Estou em busca de oportunidades para aprender e entregar na prática.</p>
+        <a class='btn' href='contact.html'>Entrar em contato</a>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div>Kaique Guedes — <a href="contact.html">Contato</a> · <a href="https://github.com/Kaiqueguedes"
-          target="_blank">GitHub</a></div>
-
-    </div>
-  </footer>
+  <footer class='site-footer'><div class='container'>Kaique Guedes · <a href='contact.html'>Contato</a> · <a href='https://github.com/Kaiqueguedes' target='_blank' rel='noopener'>GitHub</a> · <a href='https://instagram.com/kaique_.guedes' target='_blank' rel='noopener'>Instagram</a></div></footer>
 </body>
-
 </html>

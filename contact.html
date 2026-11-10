@@ -1,60 +1,48 @@
 <!doctype html>
-<html lang="pt-BR">
-
+<html lang='pt-BR'>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset='utf-8' />
+  <meta name='viewport' content='width=device-width,initial-scale=1' />
   <title>Contato — Kaique Guedes</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel='stylesheet' href='style.css' />
 </head>
-
 <body>
-  <script src="main.js" defer></script>
-  <header class="site-header">
-    <a class="logo" href="index.html">Kaique Guedes</a>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="skills.html">Habilidades</a>
-      <a href="projects.html">Projetos</a>
-      <a href="contact.html" class="active">Contato</a>
-      <button id="theme-toggle" aria-label="Alternar tema">🌗</button>
+  <canvas id='net'></canvas><div id='progress'></div><div class='glow' id='glow'></div>
+  <script src='main.js' defer></script>
+  <header class='site-header'>
+    <a class='logo' href='index.html'>&lt;<b>kaique</b>/&gt;</a>
+    <nav class='nav'>
+      <a href='index.html'>Home</a>
+      <a href='skills.html'>Habilidades</a>
+      <a href='projects.html'>Projetos</a>
+      <a href='contact.html' class='active'>Contato</a>
+      <button id='theme-toggle' aria-label='Alternar tema'>🌗</button>
     </nav>
-    <button class="mobile-menu" id="mobile-menu">☰</button>
+    <button class='mobile-menu' id='mobile-menu' aria-label='Menu'>☰</button>
   </header>
 
-  <main class="container">
-    <h1 class="reveal">Contato</h1>
-    <form id="contact-form" class="contact-form" novalidate>
-      <label>Nome
-        <input type="text" id="name" name="name" required />
-      </label>
-
-      <label>Telefone
-        <input type="tel" id="phone" name="phone" required placeholder="(00) 00000-0000" />
-      </label>
-
-      <label>Email
-        <input type="email" id="email" name="email" required placeholder="SeuContato@seuEmail.com" />
-      </label>
-
-      <label>Mensagem
-        <textarea id="message" name="message" rows="5" required placeholder="Escreva sua mensagem aqui..."></textarea>
-      </label>
-
-      <div class="form-actions">
-        <button class="btn" type="submit">Enviar</button>
+  <main class='container'>
+    <div class='eyebrow reveal'>// vamos conversar</div>
+    <h1 class='page-title reveal'>Contato</h1>
+    <p class='lead reveal'>Tem uma vaga, estágio ou projeto? Me chame por qualquer canal abaixo.</p>
+    <div class='contact-wrap'>
+      <div class='contact-list'>
+        <a class='contact-item reveal' id='copy-mail' href='mailto:kaiqueguedesv@gmail.com'><div class='ico'>✉️</div><div><b>E-mail (clique para copiar)</b><span>kaiqueguedesv@gmail.com</span></div></a>
+        <a class='contact-item reveal d1' href='tel:+5531988497624'><div class='ico'>📞</div><div><b>Telefone</b><span>(31) 98849-7624</span></div></a>
+        <a class='contact-item reveal d2' href='https://github.com/Kaiqueguedes' target='_blank' rel='noopener'><div class='ico'>💻</div><div><b>GitHub</b><span>github.com/Kaiqueguedes</span></div></a>
+        <a class='contact-item reveal d3' href='https://instagram.com/kaique_.guedes' target='_blank' rel='noopener'><div class='ico'>📸</div><div><b>Instagram</b><span>@kaique_.guedes</span></div></a>
       </div>
-      <div id="form-status" aria-live="polite"></div>
-    </form>
+      <form id='contact-form' class='contact-form reveal d1' novalidate>
+        <label>Nome<input type='text' id='name' name='name' required /></label>
+        <label>Telefone (opcional)<input type='tel' id='phone' name='phone' placeholder='(00) 00000-0000' /></label>
+        <label>E-mail<input type='email' id='email' name='email' required placeholder='seuemail@exemplo.com' /></label>
+        <label>Mensagem<textarea id='message' name='message' rows='5' required placeholder='Escreva sua mensagem aqui...'></textarea></label>
+        <button class='btn' type='submit'>Enviar mensagem</button>
+        <div id='form-status' aria-live='polite'></div>
+      </form>
+    </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div>Kaique Guedes — <a href="contact.html">Contato</a> · <a href="https://github.com/Kaiqueguedes"
-          target="_blank">GitHub</a></div>
-
-    </div>
-  </footer>
+  <footer class='site-footer'><div class='container'>Kaique Guedes · <a href='https://github.com/Kaiqueguedes' target='_blank' rel='noopener'>GitHub</a></div></footer>
 </body>
-
 </html>
